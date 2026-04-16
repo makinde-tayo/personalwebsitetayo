@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Tayo Makinde - Portfolio",
   description: "Personal portfolio of Tayo Makinde",
+  icons: {
+    icon: "/Tayo Makinde Headshot.png",
+  },
 };
 
 export default function RootLayout({
