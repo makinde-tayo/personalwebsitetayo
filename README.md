@@ -24,29 +24,6 @@ A modern personal website built with Next.js, TypeScript, and TailwindCSS.
 - **Styling**: TailwindCSS
 - **Icons**: Lucide React
 
-## Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/makinde-tayo/personalwebsitetayo
-```
-
-2. Navigate to the project directory:
-```bash
-cd personalwebsitetayo
-```
-
-3. Install dependencies:
-```bash
-npm install
-```
-
-4. Run the development server:
-```bash
-npm run dev
-```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Project Structure
 
@@ -64,7 +41,7 @@ personalwebsitetayo/
 
 ## Deployment
 
-This project can be deployed to Vercel, Netlify, or any platform that supports Next.js.
+This project was deployed using Vercel
 
 ## Author
 
