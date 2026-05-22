@@ -27,7 +27,7 @@ export default function Resume() {
               <span className="text-sm text-[#4a4a4a]">Providence, RI</span>
             </div>
             <p className="text-[#4a4a4a] text-sm mb-1">
-              Sc.B. Computer Engineering / Spanish Certificate of Intercultural Competence
+              B.A.Computer Science / B.A. Spanish
             </p>
             <p className="text-[#4a4a4a] text-sm">GPA 4.0</p>
           </div>
