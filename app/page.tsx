@@ -26,7 +26,7 @@ export default function Home() {
         <div className="max-w-2xl">
           <h2 className="text-5xl md:text-6xl font-serif mb-6">Welcome to my portfolio</h2>
           <p className="text-lg leading-relaxed mb-8 text-[#4a4a4a]">
-            If you're here, you're either a potential employer or you just clicked a random link. Either way, welcome! I'm Tayo, a Computer Engineering student at Brown who tries to build things I find actually useful. Feel free to explore my <a href="/technical" className="underline hover:text-[#2d4a2d]">technical projects</a>, check out my <a href="/resume" className="underline hover:text-[#2d4a2d]">resume</a>, or check out what I'm up to <a href="/personal" className="underline hover:text-[#2d4a2d]">when I'm not coding</a>.
+            If you're here, you're either a potential employer or you just clicked a random link. Either way, welcome! I'm Tayo, a Computer Science student at Brown who tries to build things I find actually useful. Feel free to explore my <a href="/technical" className="underline hover:text-[#2d4a2d]">technical projects</a>, check out my <a href="/resume" className="underline hover:text-[#2d4a2d]">resume</a>, or check out what I'm up to <a href="/personal" className="underline hover:text-[#2d4a2d]">when I'm not coding</a>.
           </p>
 
           {/* Social Links */}
