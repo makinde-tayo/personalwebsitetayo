@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Github, ExternalLink, Download } from 'lucide-react';
+import { ExternalLink, Download } from 'lucide-react';
 
 export default function Resume() {
   return (
@@ -20,34 +20,70 @@ export default function Resume() {
         {/* Education Section */}
         <section className="mb-8 bg-[#ffffff] rounded-lg border border-[#2d4a2d] p-8">
           <h2 className="text-2xl font-serif font-bold text-[#1a2e1a] mb-6">Education</h2>
-          
-          <div className="mb-6">
-            <div className="flex justify-between items-start mb-1">
-              <h3 className="font-bold text-lg">Brown University</h3>
-              <span className="text-sm text-[#4a4a4a]">Providence, RI</span>
-            </div>
-            <p className="text-[#4a4a4a] text-sm mb-1">
-              B.A.Computer Science / B.A. Spanish
-            </p>
-            <p className="text-[#4a4a4a] text-sm">GPA 4.0</p>
-          </div>
-          
+
           <div>
             <div className="flex justify-between items-start mb-1">
-              <h3 className="font-bold text-lg text-[#1a2e1a]">Santa Clara University</h3>
-              <span className="text-sm text-[#4a4a4a]">Santa Clara, CA</span>
+              <h3 className="font-bold text-lg">Brown University</h3>
+              <div className="text-right text-sm text-[#4a4a4a]">
+                <p>Expected May 2028</p>
+                <p>Providence, RI</p>
+              </div>
             </div>
             <p className="text-[#4a4a4a] text-sm mb-1">
-              B.A. Computer Science
+              B.A. in Computer Science and Spanish &middot; GPA 3.7
             </p>
-            <p className="text-[#4a4a4a] text-sm">GPA 3.7</p>
+            <p className="text-[#4a4a4a] text-sm">
+              Relevant Coursework: Linear Algebra, Probability and Statistics, Discrete Mathematics,
+              Data Structures and Algorithms, Multivariable Calculus, Machine Learning
+            </p>
           </div>
         </section>
 
         {/* Work Experience Section */}
         <section className="mb-8 bg-[#ffffff] rounded-lg border border-[#2d4a2d] p-8">
           <h2 className="text-2xl font-serif font-bold text-[#1a2e1a] mb-6">Work Experience</h2>
-          
+
+          <div className="mb-8">
+            <div className="flex justify-between items-start mb-1">
+              <div className="flex items-center gap-2">
+                <h3 className="font-bold text-lg text-[#1a2e1a]">Gofer AI</h3>
+                <a href="https://goferai.space/" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink size={16} className="text-[#2d4a2d]" />
+                </a>
+              </div>
+              <div className="text-right text-sm text-[#4a4a4a]">
+                <p>Jun 2026 - Present</p>
+                <p>Remote</p>
+              </div>
+            </div>
+            <p className="font-bold mb-2 text-[#1a2e1a]">Software Engineer Intern</p>
+            <div className="space-y-2 text-[#4a4a4a] text-sm">
+              <p>Built a video pre-processing and quality inspection pipeline in Python and OpenCV that screens robot-training footage for blur, brightness, contrast, and occlusion, processing 60 hours of footage and flagging 12% of frames as unusable before they reached the pose estimation models</p>
+              <p>Diagnosed a silent H.264 codec failure that was corrupting 8% of video exports, and built a validation and fallback encoding system that eliminated the failure mode across the team's annotated video output</p>
+              <p>Authored handoff documentation and delivered technical walkthroughs that integrated the quality-flagging service into the company's live robotics data pipeline</p>
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <div className="flex justify-between items-start mb-1">
+              <div className="flex items-center gap-2">
+                <h3 className="font-bold text-lg text-[#1a2e1a]">Otun AI Group</h3>
+                <a href="https://www.otungroup.com/" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink size={16} className="text-[#2d4a2d]" />
+                </a>
+              </div>
+              <div className="text-right text-sm text-[#4a4a4a]">
+                <p>Jun 2026 - Present</p>
+                <p>Self-employed</p>
+              </div>
+            </div>
+            <p className="font-bold mb-2 text-[#1a2e1a]">Founder</p>
+            <div className="space-y-2 text-[#4a4a4a] text-sm">
+              <p>Ran technical AI audits for early-stage businesses and delivered opportunity briefs scoping where automation yielded over $10,000 in measurable time and cost savings</p>
+              <p>Build and ship production automations using Claude Code and Cursor for agentic development, integrating LLM APIs, MCP servers, and RAG pipelines into client workflows</p>
+            </div>
+          </div>
+
           <div className="mb-8">
             <div className="flex justify-between items-start mb-1">
               <div className="flex items-center gap-2">
@@ -57,26 +93,26 @@ export default function Resume() {
                 </a>
               </div>
               <div className="text-right text-sm text-[#4a4a4a]">
-                <p>Sept 2025 - Present</p>
+                <p>Sept 2025 - May 2026</p>
                 <p>New York, NY</p>
               </div>
             </div>
-            <p className="font-bold mb-2 text-[#1a2e1a]">Intern</p>
+            <p className="font-bold mb-2 text-[#1a2e1a]">Software Engineer Intern</p>
             <p className="italic text-[#4a4a4a] mb-3 text-sm">
-              Reeka is an Antler-backed prop-tech startup building property management infrastructure for emerging markets, 
+              Reeka is an Antler-backed prop-tech startup building property management infrastructure for emerging markets,
               currently serving 250+ properties across Nigeria and Ghana.
             </p>
             <div className="space-y-2 text-[#4a4a4a] text-sm">
-              <p>Integrated Airbnb and Booking.com APIs to power a two-way calendar and pricing sync system, reducing double-booking incidents for clients by 40% and keeping availability data accurate across 3+ platforms in real time</p>
-              <p>Built and refined a direct booking engine with integrated payment processing, helping 50+ property managers cut third-party commission costs by routing 20% more bookings through their own sites</p>
-              <p>Contributed to the analytics and reporting module, enabling clients to track occupancy rates and revenue trends across portfolios of up to 25 properties, leading to a 15% average increase in reported occupancy</p>
+              <p>Built a two-way calendar and pricing synchronization service against the Airbnb and Booking.com REST APIs in JavaScript, reconciling conflicting updates across both platforms on a 15-minute sync interval to eliminate double-bookings</p>
+              <p>Engineered a direct booking engine with integrated payment processing, adopted by 50+ property managers to route reservations through their own sites and bypass third-party commission fees</p>
+              <p>Built the analytics and reporting module in SQL, surfacing occupancy and revenue trends across client property portfolios</p>
             </div>
           </div>
-          
+
           <div>
             <div className="flex justify-between items-start mb-1">
               <div className="flex items-center gap-2">
-                <h3 className="font-bold text-lg text-[#1a2e1a]">Imaginarium Lab Santa Clara</h3>
+                <h3 className="font-bold text-lg text-[#1a2e1a]">SCU Imaginarium Lab</h3>
                 <a href="https://www.scu.edu/imaginarium/research/metaverse/" target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={16} className="text-[#2d4a2d]" />
                 </a>
@@ -88,9 +124,9 @@ export default function Resume() {
             </div>
             <p className="font-bold mb-2 text-[#1a2e1a]">Undergraduate Researcher</p>
             <div className="space-y-2 text-[#4a4a4a] text-sm">
-              <p>Collaborated on 3 interdisciplinary research teams developing dataset labeling and annotation pieces of model evaluation pipelines in Python improving model accuracy by 30%</p>
-              <p>Designed and built a VR research game in Unity to promote body positivity, integrated real-time physics-based interactions and haptic feedback system. Tested by 50+ participants, increasing engagement duration by 25% on average</p>
-              <p>Collaborated on research projects accepted to premier AI conferences (CVPR and AAAI); results recognized for research excellence</p>
+              <p>Built dataset labeling and annotation tooling in Python across 3 interdisciplinary research teams under Prof. David Jeong, improving model evaluation accuracy by 9% on a 5,000-sample dataset</p>
+              <p>Designed and implemented a VR research study environment in Unity and C#, integrating real-time physics-based interaction and haptic feedback for 40 study participants</p>
+              <p>Analyzed behavioral and biometric data from the VR experiments in Python; supporting work contributed to publications accepted at CVPR and AAAI</p>
             </div>
           </div>
         </section>
@@ -109,11 +145,10 @@ export default function Resume() {
               </div>
               <span className="text-sm text-[#4a4a4a]">April 2026</span>
             </div>
-            <p className="text-[#2d4a2d] text-sm mb-2">Next.js, TypeScript, Node.js, OpenRouter</p>
+            <p className="text-[#2d4a2d] text-sm mb-2">Next.js, TypeScript, Node.js</p>
             <p className="text-[#4a4a4a] text-sm">
-              Developed a full-stack desktop organization tool that utilizes a "swipe-to-sort" interface for file management, 
-              automating cleanup via generated macOS terminal commands. Integrated OpenRouter API (Elephant Alpha) to generate 
-              AI-powered file summaries by recursively parsing and extracting metadata from PDF, DOCX, and CSV formats.
+              Developed a full-stack desktop cleanup tool with a swipe-based file sorting interface, calling an LLM
+              through the OpenRouter REST API to generate summaries of PDF, DOCX, and CSV files.
             </p>
           </div>
           
@@ -127,12 +162,11 @@ export default function Resume() {
               </div>
               <span className="text-sm text-[#4a4a4a]">May 2025</span>
             </div>
-            <p className="text-[#2d4a2d] text-sm mb-2">Python, OpenCV</p>
+            <p className="text-[#2d4a2d] text-sm mb-2">Python, OpenCV, YOLO, Roboflow</p>
             <p className="text-[#4a4a4a] text-sm">
-              Developed a computer vision system to track basketball shots using OpenCV color detection and a YOLO-based 
-              hoop detector, achieving 92% tracking accuracy across 1,000+ video frames. Modeled shot trajectories with 
-              polynomial regression to predict scoring outcomes with 85% accuracy. Trained and deployed models using Google 
-              Colab and Roboflow for dataset management and augmentation.
+              Built a computer vision system that tracks basketball trajectories and predicts scoring outcomes from
+              unmodified video, training a YOLO-based detector on a 2,400-image annotated dataset in Google Colab to
+              reach 91% detection accuracy at 30 FPS.
             </p>
           </div>
           
@@ -162,19 +196,19 @@ export default function Resume() {
           
           <div className="mb-4">
             <h3 className="font-bold mb-2">Languages:</h3>
-            <p className="text-[#4a4a4a] text-sm">Python, Java, C, C++, JavaScript, Swift</p>
+            <p className="text-[#4a4a4a] text-sm">Python, C/C++, Java, JavaScript, TypeScript, SQL, C#</p>
           </div>
-          
+
           <div>
-            <h3 className="font-bold mb-2">Technologies/Frameworks:</h3>
-            <p className="text-[#4a4a4a] text-sm">Linux, GitHub, ReactJS, Git, Flutter</p>
+            <h3 className="font-bold mb-2">Libraries and Tools:</h3>
+            <p className="text-[#4a4a4a] text-sm">OpenCV, PyTorch, NumPy, Pandas, Git, Docker, Next.js, Node.js, Unity, PostgreSQL</p>
           </div>
         </section>
 
         {/* Download Resume Button */}
         <div className="flex justify-center mt-12">
           <a
-            href="/Tayo_Makinde_I_Resume.pdf"
+            href="/Tayo_Makinde_Resume.pdf"
             download="Tayo Makinde Resume.pdf"
             className="flex items-center gap-3 px-8 py-4 bg-[#ffffff] border border-[#2d4a2d] rounded-lg hover:border-[#1a2e1a] hover:text-[#1a2e1a] transition-colors text-lg"
           >
